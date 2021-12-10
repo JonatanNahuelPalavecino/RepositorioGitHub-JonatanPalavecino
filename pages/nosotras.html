@@ -4,64 +4,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Estonia&family=Lato:ital,wght@1,300&family=Montserrat:ital,wght@0,100;1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
     <title>DI-DI Sculpidas</title>
     <link rel="shortcut icon" href="../images/logo.png">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
-<body>
+<body class="body">
 
 <!--Comienzo de Encabezado + botones navegables de la Web-->
 
-    <header>
-        <div>
+    <header class="encabezado">
+        <div class="encabezado__logoLema">
             <a href="../index.html">
-                <img src="../images/logo1.png" alt="logo">
+                <img class="encabezado__logo" src="../images/logo1.png" alt="logo">
             </a>
-            <h3> Manicura y técnica profesional en uñas esculpidas</h3>
+            <h3 class="encabezado__lema""> Manicura y técnica profesional en uñas esculpidas</h3>
         </div>
-        >
-                <li><a href="./nosotras.html">Nosotras</a></li>
-                <li><a href="./listadeprecios.html">Lista de Precios</a></li>
-                <li><a href="./solicitatuturno.html">Solicita Tu Turno</a></li>
-                <li><a href="./galeriadefotos.html">Galeria de Fotos</a></li>
-                <li><a href="./proximamente.html">Proximamente!</a></li>
+        <nav class="encabezado__navegacion">
+            <ul class="encabezado__lista">
+                <li class= "encabezado__item"><a class="encabezado__enlace" href="./nosotras.html">Nosotras</a></li>
+                <li class= "encabezado__item"><a class="encabezado__enlace" href="./listadeprecios.html">Lista de Precios</a></li>
+                <li class= "encabezado__item"><a class="encabezado__enlace" href="./solicitatuturno.html">Solicita Tu Turno</a></li>
+                <li class= "encabezado__item"><a class="encabezado__enlace" href="./galeriadefotos.html">Galeria de Fotos</a></li>
+                <li class= "encabezado__item"><a class="encabezado__enlace" href="./proximamente.html">Proximamente!</a></li>
             </ul>
         </nav>
     </header>
-    <hr>
+    <hr class="separador color-change-3x">
 
 <!--Final de Encabezado + botones navegables de la Web-->
 
 <!--Comienzo del cuerpo "Nosotras"-->
 
-    <section>
-        <div>
-            <h2>Nosotras</h2>
-            <p>Nuestro equipo esta conformado por profesionales de la manicuría, con mas de 5 años de experiencia en el rubro. Nos actualizamos constantemente en las nuevas practicas para lograr mejores resultados y conseguir lo que nuestras clientas desean. Nuestro mayor objetivo es que disfruten de la experiencia y se vayan, con la intencion de volver.
+    <section class="nosotras">
+        <div class="nosotras__contenedor">
+            <h2 class="contenedor__titulo" data-aos="fade-down" data-aos-delay="50" data-aos-once="true">Nosotras</h2>
+            <p class="contenedor__descripcion contenedor__descripcion--corto" data-aos="fade-down" data-aos-delay="100" data-aos-once="true">Nuestro equipo esta conformado por profesionales de la manicuría, con mas de 5 años de experiencia en el rubro. Nos actualizamos constantemente en las nuevas practicas para lograr mejores resultados y conseguir lo que nuestras clientas desean. Nuestro mayor objetivo es que disfruten de la experiencia y se vayan, con la intencion de volver.
             </p>
         </div>
-        <div>
-            <h2>Nuestro Local</h2>
-            <div>
-                <div>
-                    <div>
-                        <div>
-                            <img src="../images/IMG-20211106-WA0074.jpg" alt="imgancha1">
-                            <img src="../images/IMG-20211106-WA0081.jpg" alt="imgancha2">
-                            <img src="../images/IMG-20211106-WA0069.jpg" alt="imgancha3">
-                            <img src="../images/IMG-20211106-WA0077.jpg" alt="imgancha4">
-                            <img src="../images/IMG-20211106-WA0074.jpg" alt="imgancha1">
+        <div class="nosotras__contenedor">
+            <h2 class="contenedor__titulo data-aos="fade-down" data-aos-delay="50" data-aos-once="true">Nuestro Local</h2>
+            <div class="nosotras__contenedor">
+                <div class="nosotras__contenedorLocal" data-aos="fade-down" data-aos-delay="50" data-aos-once="true">
+                    <div class="nosotras__contenedorImgAncha">
+                        <div id="slider" data-aos="fade-down" data-aos-delay="50" data-aos-once="true">
+                            <img class="slider__img" src="../images/IMG-20211106-WA0074.jpg" alt="imgancha1">
+                            <img class="slider__img" src="../images/IMG-20211106-WA0081.jpg" alt="imgancha2">
+                            <img class="slider__img" src="../images/IMG-20211106-WA0069.jpg" alt="imgancha3">
+                            <img class="slider__img" src="../images/IMG-20211106-WA0077.jpg" alt="imgancha4">
+                            <img class="slider__img" src="../images/IMG-20211106-WA0074.jpg" alt="imgancha1">
                         </div>
                     </div>
-                    <div>
-                        <p>Contamos con lo ultimo en materiales de manicuría. Esmaltes de todo tipo, geles, elementos para el moldeado de uñas, etc.</p>
+                    <div class="nosotras__contenedorDescripcion" data-aos="fade-down" data-aos-delay="200" data-aos-once="true">
+                        <p class="contenedor__descripcion">Contamos con lo ultimo en materiales de manicuría. Esmaltes de todo tipo, geles, elementos para el moldeado de uñas, etc.</p>
                     </div>
-                    <div>
-                        <div>
-                            <img src="../images/IMG-20211106-WA0078a.jpg" alt="imglarga1">
-                            <img src="../images/IMG-20211106-WA0070a.jpg" alt="imglarga2">
-                            <img src="../images/IMG-20211106-WA0071a.jpg" alt="imglarga3">
-                            <img src="../images/IMG-20211106-WA0075a.jpg" alt="imglarga4">
-                            <img src="../images/IMG-20211106-WA0078a.jpg" alt="imglarga1">
+                    <div class="nosotras__contenedorImgLarga" data-aos="fade-down" data-aos-delay="150" data-aos-once="true">
+                        <div id="slider">
+                            <img class="slider__img slider__img--Larga" src="../images/IMG-20211106-WA0078a.jpg" alt="imglarga1">
+                            <img class="slider__img slider__img--Larga" src="../images/IMG-20211106-WA0070a.jpg" alt="imglarga2">
+                            <img class="slider__img slider__img--Larga" src="../images/IMG-20211106-WA0071a.jpg" alt="imglarga3">
+                            <img class="slider__img slider__img--Larga" src="../images/IMG-20211106-WA0075a.jpg" alt="imglarga4">
+                            <img class="slider__img slider__img--Larga" src="../images/IMG-20211106-WA0078a.jpg" alt="imglarga1">
                         </div>
                     </div>
                 </div>
@@ -73,35 +79,39 @@
 
 <!--Comienzo del footer de la Web-->
 
-    <footer>
-        <div>
-            <h4>
+    <footer class="footer">
+        <div class="footer__contenedor">
+            <h4 class="footer__titulo">
                 Aceptamos todos los metodos de pago!
             </h4>
-            <ul>
+            <ul class="footer__item">
                 <li>Efectivo</li>
                 <li>Mercado Pago</li>
-                <ul>
+                <ul class="footer__item">
                     <li>Tarjeta de Debito</li>
                     <li>Tarjeta de Credito</li>
                     <li>Transferencia</li>
                 </ul>
             </ul>
         </div>
-        <div>
+        <div class="footer__contenedor">
             <div>
-                <nav>
-                <ul>
-                    <li><a href="https://www.instagram.com/esculpidas.didi/"><img src="../images/instagram logo.png" alt="instagram"></a></li>
-                    <li><a href="https://www.facebook.com/diana.carolina1986"><img src="../images/facebook logo.png" alt="facebook"></a></li>
+                <nav class="footer__redes">
+                <ul class="footer__redesItem">
+                    <li><a href="https://www.instagram.com/esculpidas.didi/"><img class="footer__imgIg" src="../images/instagram logo.png" alt="instagram"></a></li>
+                    <li><a href="https://www.facebook.com/diana.carolina1986"><img class="footer__imgFb" src="../images/facebook logo.png" alt="facebook"></a></li>
                 </ul>
              </nav>
             </div>
-            <p><b>DI-DI Scuplidas!</b> Una idea de Diana Castro Hernández</p>
+            <p class="footer__firma"><b>DI-DI Scuplidas!</b> Una idea de Diana Castro Hernández</p>
         </div>
     </footer>
 
 <!--Final del footer de la Web-->
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script> 
+     AOS.init();
+    </script>
 </body>
 </html>
