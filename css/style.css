@@ -50,7 +50,6 @@
 }
 
 .separador {
-  height: 8px !important;
   border: none;
 }
 
@@ -118,29 +117,6 @@
   border-radius: 5%;
   box-shadow:  10px 10px 7px #141212,
              -10px -10px 7px #262424;
-}
-
-#slider {
-  position: relative;
-  width: 500%;
-  animation: 30s movimientoimagen infinite; 
-}
-
-@keyframes movimientoimagen {
-  0% { left: 0%; }
-  20% { left: 0%; }
-  25% { left: -100%; }
-  45% { left: -100%; }
-  50% { left: -200%; }
-  70% { left: -200%; }
-  75% { left: -300%; }
-  95% { left: -300%; }
-  100% { left: -400%; }
-  }
-
-.slider__img {
-  width: 20%; 
-  float: left; 
 }
 
 .contenedor__multimedia {
