@@ -1,0 +1,46 @@
+@import "./vars";
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px 15px;
+    &__titulo {
+        font-family: $fuente-bebas;
+        font-size: 1.4rem;
+        text-align: center;
+        line-height: 2rem;
+        color: $color-principaldos;
+    }
+    
+    &__item {
+        font-family: $fuente-monstserrat;
+        font-size: 0.9rem;
+        list-style-type: none;
+        text-align: center;
+        line-height: 2rem;
+        color: $color-principaldos;
+    }
+    
+    &__redesItem {
+        display: flex;
+        justify-content: space-evenly;
+        list-style-type: none;
+    }
+    
+    &__imgIg {
+        width: 45px;
+        height: 45px;
+    }
+    
+    &__imgFb {
+        width: 45px;
+        height: 45px;
+    }
+    
+    &__firma {
+        font-family: $fuente-lato;
+        font-size: 1.2rem;
+        color: $color-principaldos;
+    }  
+}

@@ -1,0 +1,287 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.body {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(25%, #090808), color-stop(75%, #211f20));
+  background: linear-gradient(180deg, #090808 25%, #211f20 75%);
+}
+
+.encabezado__logo {
+  width: 200px;
+  margin-top: 1rem;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.encabezado__logo:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.encabezado__lema {
+  font-family: "Estonia", cursive;
+  font-size: 2.5rem;
+  color: #f4a9a9;
+}
+
+.encabezado__enlace {
+  margin: 0px 10px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(currentColor), to(currentColor));
+  background-image: linear-gradient(currentColor, currentColor);
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  -webkit-transition: background-size 0.5s;
+  transition: background-size 0.5s;
+  background-position: 0% 100%;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.encabezado__enlace:hover, .encabezado__enlace:focus {
+  color: #f4a9a9 !important;
+  background-size: 100% 2px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.color-change-3x {
+  -webkit-animation: color-change-3x 4s ease-in-out infinite alternate;
+  animation: color-change-3x 4s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes color-change-3x {
+  0% {
+    background: #ffffff;
+  }
+  50% {
+    background: #f4a9a9;
+  }
+  100% {
+    background: #ee7c7c;
+  }
+}
+
+@keyframes color-change-3x {
+  0% {
+    background: #ffffff;
+  }
+  50% {
+    background: #f4a9a9;
+  }
+  100% {
+    background: #ee7c7c;
+  }
+}
+
+@keyframes color-change-3x {
+  0% {
+    background: #ffffff;
+  }
+  50% {
+    background: #f4a9a9;
+  }
+  100% {
+    background: #ee7c7c;
+  }
+}
+
+.contenedor {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "contenido1 contenido2" "contenido3 contenido4" "contenido5 contenido5";
+  -ms-grid-columns: 47% 47%;
+      grid-template-columns: 47% 47%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
+}
+
+.contenedor__articuloUno {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: contenido1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 4rem;
+}
+
+.contenedor__titulo {
+  font-family: "Bebas Neue", cursive;
+  font-size: 3rem;
+  color: #ffffff;
+  text-align: center;
+  line-height: 3rem;
+}
+
+.contenedor__descripcion {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3rem;
+  color: #ffffff;
+  text-align: center;
+  line-height: 2rem;
+}
+
+.contenedor__slider {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: contenido2;
+  overflow: hidden;
+  margin-top: 4rem;
+  border: 8px #f4a9a9 solid;
+  border-radius: 5%;
+  -webkit-box-shadow: 10px 10px 7px #141212, -10px -10px 7px #262424;
+          box-shadow: 10px 10px 7px #141212, -10px -10px 7px #262424;
+}
+
+.contenedor__articuloDos {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: contenido4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 4rem;
+}
+
+.contenedor__multimedia {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: contenido3;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 4rem;
+  border: 8px #f4a9a9 solid;
+  border-radius: 5%;
+  -webkit-box-shadow: 10px 10px 7px #141212, -10px -10px 7px #262424;
+          box-shadow: 10px 10px 7px #141212, -10px -10px 7px #262424;
+}
+
+.contenedor__video {
+  width: 635px;
+  height: 480px;
+}
+
+.contenedor__tituloMap {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: contenido5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 4rem;
+}
+
+.contenedor__transporte {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 2rem;
+}
+
+.contenedor__tituloChico {
+  font-family: "Bebas Neue", cursive;
+  font-size: 1.8rem;
+  color: #ffffff;
+  line-height: 3rem;
+  text-align: center;
+  list-style-type: none;
+}
+
+.contenedor__map {
+  margin-top: 2rem;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px 30px 15px;
+}
+
+.footer__titulo {
+  font-family: "Bebas Neue", cursive;
+  font-size: 1.4rem;
+  text-align: center;
+  line-height: 2rem;
+  color: #ffffff;
+}
+
+.footer__item {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+  list-style-type: none;
+  text-align: center;
+  line-height: 2rem;
+  color: #ffffff;
+}
+
+.footer__redesItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  list-style-type: none;
+}
+
+.footer__imgIg {
+  width: 45px;
+  height: 45px;
+}
+
+.footer__imgFb {
+  width: 45px;
+  height: 45px;
+}
+
+.footer__firma {
+  font-family: "Lato", sans-serif;
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+/*# sourceMappingURL=main.css.map */

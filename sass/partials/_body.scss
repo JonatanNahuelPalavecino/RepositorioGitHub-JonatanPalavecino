@@ -1,0 +1,98 @@
+@import "./vars";
+
+.contenedor {
+    display: grid;
+    grid-template-areas:
+          "contenido1 contenido2"
+          "contenido3 contenido4"
+          "contenido5 contenido5";
+    grid-template-columns: 47% 47%;
+    justify-content: center;
+    gap: 1rem;
+
+    &__articuloUno {
+        grid-area: contenido1;   
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-top: 4rem;
+    }
+    
+    &__titulo {
+        font-family: $fuente-bebas;
+        font-size: 3rem;
+        color: $color-principaldos;
+        text-align: center;
+        line-height: 3rem;
+      }
+      
+    &__descripcion {
+        font-family: $fuente-monstserrat;
+        font-size: 1.3rem;
+        color: $color-principaldos;
+        text-align: center;
+        line-height: 2rem;
+      }
+    
+    &__slider {
+        grid-area: contenido2;
+        overflow: hidden;
+        margin-top: 4rem;
+        border: 8px $color-principaluno solid;
+        border-radius: 5%;
+        box-shadow:  10px 10px 7px #141212,
+                   -10px -10px 7px #262424;
+      }
+      
+    &__articuloDos {
+        grid-area: contenido4;   
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-top: 4rem;
+      }
+      
+    &__multimedia {
+        grid-area: contenido3;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        margin-top: 4rem;
+        border: 8px $color-principaluno solid;
+        border-radius: 5%;
+        box-shadow:  10px 10px 7px #141212,
+                   -10px -10px 7px #262424;
+      }
+      
+    &__video {
+        width: 635px;
+        height: 480px;
+      }
+      
+    &__tituloMap {
+        grid-area: contenido5;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-top: 4rem;
+      }
+      
+    &__transporte {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 2rem;
+      }
+      
+    &__tituloChico {
+        font-family: $fuente-bebas;
+        font-size: 1.8rem;
+        color: #ffffff;
+        line-height: 3rem;
+        text-align: center;
+        list-style-type: none;
+      }
+      
+    &__map {
+        margin-top: 2rem;
+      }
+}

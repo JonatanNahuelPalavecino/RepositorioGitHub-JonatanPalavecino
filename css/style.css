@@ -71,13 +71,13 @@
 
 .contenedor {
   display: grid;
-    grid-template-areas:
+  grid-template-areas:
         "contenido1 contenido2"
         "contenido3 contenido4"
         "contenido5 contenido5";
-    grid-template-columns: 47% 47%;
-    justify-content: center;
-    gap: 1rem;
+  grid-template-columns: 47% 47%;
+  justify-content: center;
+  gap: 1rem;
 }
 
 .contenedor__articuloUno {
