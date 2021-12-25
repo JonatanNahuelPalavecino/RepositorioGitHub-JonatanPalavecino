@@ -1,36 +1,44 @@
 @import "./vars";
+@import "./media-queries";
 
-.encabezado__logo {
-    width: 200px;
-    margin-top: 1rem;
-    transition: all 1s;
+.encabezado {
+  @include hasta1200px {
+    display: flex;
+    flex-direction: column;
+  }
 
-    &:hover {
-        transform: scale(1.1);
-    }
-}
-
-.encabezado__lema {
-    font-family: $fuente-estonia;
-    font-size: 2.5rem;
-    color: $color-principaluno;
-}
+  &__logo {
+      width: 200px;
+      margin-top: 1rem;
+      transition: all 1s;
   
-.encabezado__enlace {
-  margin: 0px 10px;
-  background-image: linear-gradient(currentColor, currentColor);
-  background-repeat: no-repeat;
-  background-size: 0% 2px;
-  transition: background-size 0.5s;
-  background-position: 0% 100%;
-  text-decoration: none;
-  font-family: $fuente-monstserrat;
-  font-weight: bold;
-  color: $color-principaldos;
-
-  &:hover, &:focus {
-    color: $color-principaluno !important;
-    background-size: 100% 2px;
-    transition: 0.2s
+      &:hover {
+          transform: scale(1.1);
+      }
+  }
+  
+  &__lema {
+      font-family: $fuente-estonia;
+      font-size: 2.5rem;
+      color: $color-principaluno;
+  }
+    
+  &__enlace {
+    margin: 0px 10px;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size 0.5s;
+    background-position: 0% 100%;
+    text-decoration: none;
+    font-family: $fuente-monstserrat;
+    font-weight: bold;
+    color: $color-principaldos;
+  
+    &:hover, &:focus {
+      color: $color-principaluno !important;
+      background-size: 100% 2px;
+      transition: 0.2s
+    }
   }
 }

@@ -7,3 +7,19 @@ $fuente-monstserrat: 'Montserrat', sans-serif;
 $fuente-estonia: 'Estonia', cursive;
 $fuente-bebas: 'Bebas Neue', cursive;
 $fuente-lato: 'Lato', sans-serif;
+
+%alineacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+@mixin texto-color-alineacion {
+    color: $color-principaldos;
+        text-align: center;
+}
+
+$bordes: (
+    borde: 8px $color-principaluno solid,
+    curvaDelBorde: 5%,
+);
