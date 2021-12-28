@@ -39,13 +39,18 @@
   text-decoration: none;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
-  color: #ffffff;
+  color: white;
 }
 
 .encabezado__enlace:hover, .encabezado__enlace:focus {
   color: #f4a9a9 !important;
   background-size: 100% 2px;
   transition: 0.2s
+}
+
+.separador hr {
+  height: 8px;
+  opacity: 1;
 }
 
 .color-change-3x {
@@ -192,12 +197,14 @@
   text-align: center;
   line-height: 2rem;
   color: #ffffff;
+  padding-left: 0;
 }
 
 .footer__redesItem {
   display: flex;
   justify-content: space-evenly;
   list-style-type: none;
+  padding-left: 0;
 }
 
 .footer__imgIg {

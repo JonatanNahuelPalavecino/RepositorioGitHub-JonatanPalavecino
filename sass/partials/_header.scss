@@ -23,7 +23,7 @@
       color: $color-principaluno;
   }
     
-  &__enlace {
+  &__enlace{
     margin: 0px 10px;
     background-image: linear-gradient(currentColor, currentColor);
     background-repeat: no-repeat;
@@ -33,7 +33,7 @@
     text-decoration: none;
     font-family: $fuente-monstserrat;
     font-weight: bold;
-    color: $color-principaldos;
+    color: $color-principaldos !important;
   
     &:hover, &:focus {
       color: $color-principaluno !important;

@@ -91,7 +91,7 @@
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
-  color: #ffffff;
+  color: #ffffff !important;
 }
 
 .encabezado__enlace:hover, .encabezado__enlace:focus {
@@ -99,6 +99,11 @@
   background-size: 100% 2px;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+}
+
+.separador {
+  height: 8px !important;
+  opacity: 1;
 }
 
 .color-change-3x {
