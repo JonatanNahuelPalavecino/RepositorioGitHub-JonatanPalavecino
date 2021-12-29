@@ -1,16 +1,31 @@
-@import "./vars";
+@import "../utilities/vars";
 
 .footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 30px 15px;
+    @include hasta768px {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__contenedor {
+        align-self: end;
+        @include hasta768px {
+            align-self: center;
+        }
+    }
+
     &__titulo {
         font-family: $fuente-bebas;
         font-size: 1.4rem;
         text-align: center;
         line-height: 2rem;
         color: $color-principaldos;
+        @include hasta1024px {
+            font-size: 1.6rem;
+        }
     }
     
     &__item {
@@ -20,12 +35,20 @@
         text-align: center;
         line-height: 2rem;
         color: $color-principaldos;
+        padding-left: 0;
+        @include hasta1024px {
+            font-size: 1.1rem;
+        }
+        @include hasta480px {
+            font-size: 1rem;
+        }
     }
     
     &__redesItem {
         display: flex;
         justify-content: space-evenly;
         list-style-type: none;
+        padding-left: 0;
     }
     
     &__imgIg {
@@ -42,5 +65,12 @@
         font-family: $fuente-lato;
         font-size: 1.2rem;
         color: $color-principaldos;
+        @include hasta1024px {
+            font-size: 1.3rem;
+        }
+        @include hasta480px {
+            font-size: 1rem;
+            text-align: center;
+        }
     }  
 }
