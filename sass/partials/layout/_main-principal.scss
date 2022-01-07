@@ -1,6 +1,12 @@
 @import "../utilities/vars";
 @import "../responsive/media-queries";
 
+%alineacion {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
 .contenedor {
     display: grid;
     grid-template-areas:
