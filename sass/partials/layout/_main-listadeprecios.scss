@@ -1,0 +1,33 @@
+@import "../utilities/vars";
+@import "../responsive/media-queries";
+
+.price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+
+    &__contenedor {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border: map-get($bordes, borde);
+      border-radius:map-get($bordes, curvaDelBorde);
+      @include sombreado-de-caja;
+      width: 700px;
+      margin: 4rem;
+
+      &A {
+        padding: 30px;
+      }
+      
+      &B {
+        padding: 30px;
+      }
+      
+      &C {
+        padding: 30px;
+      }
+    }
+  }
+  

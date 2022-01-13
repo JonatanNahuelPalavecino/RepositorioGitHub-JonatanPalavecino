@@ -34,8 +34,7 @@
       overflow: hidden;
       border: map-get($bordes, borde);
       border-radius: 1%;
-      box-shadow:  10px 10px 7px #141212,
-                 -10px -10px 7px #262424;
+      @include sombreado-de-caja;
       object-fit: cover;
       @include hasta768px {
           width: 550px;
@@ -53,8 +52,7 @@
       overflow: hidden;
       border: map-get($bordes, borde);
       border-radius: 1%;
-      box-shadow:  10px 10px 7px #141212,
-                 -10px -10px 7px #262424;
+      @include sombreado-de-caja;
       object-fit: cover;
       @include hasta768px {
         width: 250px;

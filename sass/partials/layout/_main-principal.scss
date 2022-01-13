@@ -1,7 +1,7 @@
 @import "../utilities/vars";
 @import "../responsive/media-queries";
 
-%alineacion {
+%alineacionprincipal {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -28,7 +28,7 @@
 
     &__articuloUno {
         grid-area: contenido1;   
-        @extend %alineacion;
+        @extend %alineacionprincipal;
         margin-top: 4rem;
     }
     
@@ -76,8 +76,7 @@
         margin-top: 4rem;
         border: map-get($bordes, borde);
         border-radius: map-get($bordes , curvaDelBorde);
-        box-shadow: 10px 10px 7px #141212,
-                  -10px -10px 7px #262424;
+        @include sombreado-de-caja;
         @include hasta1024px {
           width: 70%;
         }
@@ -94,7 +93,7 @@
       
     &__articuloDos {
         grid-area: contenido4;   
-        @extend %alineacion;
+        @extend %alineacionprincipal;
         margin-top: 4rem;
       }
       
@@ -106,8 +105,7 @@
         margin-top: 4rem;
         border: map-get($bordes, borde);
         border-radius: map-get($bordes , curvaDelBorde);
-        box-shadow: 10px 10px 7px #141212,
-                  -10px -10px 7px #262424;
+        @include sombreado-de-caja;
       }
       
     &__video {
