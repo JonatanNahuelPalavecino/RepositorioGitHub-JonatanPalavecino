@@ -16,17 +16,32 @@
       @include sombreado-de-caja;
       width: 700px;
       margin: 4rem;
+      @include hasta768px {
+        width: 550px;
+      }
+      @include hasta600px {
+        width: 450px;
+      }
+      @include hasta480px {
+        width: 350px;
+      }
+      @include hasta480px {
+        width: 350px;
+      }
+      @include hasta320px {
+        width: 280px;
+      }
 
       &A {
         padding: 30px;
       }
       
       &B {
-        padding: 30px;
+        @extend .price__contenedorA;
       }
       
       &C {
-        padding: 30px;
+        @extend .price__contenedorA;
       }
     }
   }

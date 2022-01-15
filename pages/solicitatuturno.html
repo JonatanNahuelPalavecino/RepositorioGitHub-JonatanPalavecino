@@ -65,18 +65,36 @@
                     <fieldset class="form__contenedorRecuadro">
                         <label class="form__contenedorTitulo" for="diadelturno">Dia del turno:</label>
                         <div class="form-check form__contenedorOpcion">
-                            <input class="form__contenedorRadio form-check-input" type="radio" name="diadelturno" value="lunes">Lunes
-                            <input class="form__contenedorRadio form-check-input" type="radio" name="diadelturno" value="martes">Martes
-                            <input class="form__contenedorRadio form-check-input" type="radio" name="diadelturno" value="miercoles">Miercoles
-                            <input class="form__contenedorRadio form-check-input" type="radio" name="diadelturno" value="jueves">Jueves
-                            <input class="form__contenedorRadio form-check-input" type="radio" name="diadelturno" value="viernes">Viernes
-                            <input class="form__contenedorRadio form-check-input" type="radio" name="diadelturno" value="sabado">Sabado
+                            <div class="form__contenedorDato">
+                                <input class="form__contenedorRadio form-check-input form__contenedorRadio--ml" type="radio" name="diadelturno" value="lunes">Lunes
+                            </div>
+                            <div class="form__contenedorDato">
+                                <input class="form__contenedorRadio form-check-input" type="radio" name="diadelturno" value="martes">Martes
+                            </div>
+                            <div class="form__contenedorDato">
+                                <input class="form__contenedorRadio form-check-input" type="radio" name="diadelturno" value="miercoles">Miercoles
+                            </div>
+                            <div class="form__contenedorDato">
+                                <input class="form__contenedorRadio form-check-input" type="radio" name="diadelturno" value="jueves">Jueves
+                            </div>
+                            <div class="form__contenedorDato">
+                                <input class="form__contenedorRadio form-check-input" type="radio" name="diadelturno" value="viernes">Viernes
+                            </div>
+                            <div class="form__contenedorDato">
+                                <input class="form__contenedorRadio form-check-input" type="radio" name="diadelturno" value="sabado">Sabado
+                            </div>
                         </div>
                         <label class="form__contenedorTitulo" for="horariodelturno">Franja horaria:</label>
                         <div class="form-check form__contenedorOpcion">
-                            <input class="form__contenedorRadio form-check-input" type="radio" name="horariodelturno" value="nueveADoce">De 9 a 12hs
-                            <input class="form__contenedorRadio form-check-input" type="radio" name="horariodelturno" value="doceAQuince">De 12 a 15hs
-                            <input class="form__contenedorRadio form-check-input" type="radio" name="horariodelturno" value="quinceADieciocho">De 15 a 18hs
+                            <div class="form__contenedorDato">
+                                <input class="form__contenedorRadio form-check-input form__contenedorRadio--ml" type="radio" name="horariodelturno" value="nueveADoce">De 9 a 12hs
+                            </div>
+                            <div class="form__contenedorDato">
+                                <input class="form__contenedorRadio form-check-input" type="radio" name="horariodelturno" value="doceAQuince">De 12 a 15hs
+                            </div>
+                            <div class="form__contenedorDato">
+                                <input class="form__contenedorRadio form-check-input" type="radio" name="horariodelturno" value="quinceADieciocho">De 15 a 18hs
+                            </div>
                         </div>
                         <label class="form__contenedorTitulo" for="info-personal">Nombre:</label>
                         <div class="form__contenedorText">
@@ -92,7 +110,7 @@
                         </div>
                         <label class="form__contenedorTitulo" for="trabajoarealizar">¿Que tenes ganas de hacerte en las uñas?</label>
                         <div class="form__contenedorText">
-                            <select class="form__contenedorComp form-select" name="user-work" id="trabajoarealizar">
+                            <select class="form__contenedorSel form-select" name="user-work" id="trabajoarealizar">
                                 <option value="trabajoA">Uñas esculpidas en acrílico con dos decos simples</option>
                                 <option value="trabajoB">Capping acrilico / gel básicos con dos decos simples</option>
                                 <option value="trabajoC">Esmaltado semipermanente con dos decos simples</option>
@@ -103,7 +121,7 @@
                         </div>
                         <label class="form__contenedorTitulo" for="adicionales">¿Queres añadir algun adicional?</label>
                         <div class="form__contenedorText">
-                            <select class="form__contenedorComp form-select" name="user-work" id="adicionales">
+                            <select class="form__contenedorSel form-select" name="user-work" id="adicionales">
                                 <option value="adicionalA">Ninguno</option>
                                 <option value="adicionalB">Caricaturas / Diseños 3D</option>
                                 <option value="adicionalC">Dijes chicos / muñecos Kawaii / piedras grandes</option>

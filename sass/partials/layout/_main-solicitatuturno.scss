@@ -14,6 +14,18 @@
     &__contenedor {
       width: 840px;
       text-align: center;
+      @include hasta1024px {
+        width: 700px;
+      }
+      @include hasta768px {
+        width: 550px;
+      }
+      @include hasta600px {
+        width: 320px;
+      }
+      @include hasta320px {
+        width: 280px;
+      }
 
       &Recuadro {
         @extend %alineacionstt;
@@ -24,10 +36,19 @@
       }
       
       &Titulo {
-        font-family: 'Lato', sans-serif;
-        font-size: 1.3rem;
+        font-family: $fuente-lato;
+        font-size: 1.8rem;
         color: $color-principaluno;
         padding: 30px 0px;
+        @include hasta1024px {
+          font-size: 1.6rem;
+        }
+        @include hasta768px {
+          font-size: 1.4rem;
+        }
+        @include hasta320px {
+          font-size: 1.2rem;
+        }
       }
       
       &Comp:focus {
@@ -37,9 +58,26 @@
       
       &Opcion {
         display: flex;
-        font-family: 'Lato', sans-serif;
-        font-size: 1rem;
-        color: #ffffff;
+        font-family: $fuente-lato;
+        font-size: 1.3rem;
+        color: $color-principaldos;
+        padding-left: 0;
+        @include hasta1024px {
+          font-size: 1.1rem;
+        }
+        @include hasta768px {
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+        @include hasta600px {
+          flex-direction: column;
+        }
+      }
+
+      &Dato {
+        @include hasta768px {
+          margin-bottom: 10px;
+        }
       }
       
       &Radio {
@@ -47,14 +85,36 @@
         margin-left: 1.5em !important;
         margin-right: 10px;
 
+        &--ml {
+          @include hasta768px{
+            margin-left: 0 !important; 
+          }
+          @include hasta600px{
+            margin-left: 1.5em !important; 
+          }
+        }
+
         &:checked {
-          background-color: $color-principaldos;
+          background-color: $color-principalseis;
           border-color: $color-principaluno;
         }
         
         &:focus {
+          border-color: $color-principaluno;
+          box-shadow: none;
+        }
+      }
+
+      &Sel {
+
+        &:focus {
           border-color: $color-principaldos;
           box-shadow: 0 0 0 0.25rem $color-principaluno;
+        }
+
+        @include hasta600px {
+          display: initial;
+          width: 85%;
         }
       }
     }
@@ -62,10 +122,30 @@
     &__textarea {
       width: 35rem;
       height: 15rem;
+      @include hasta1024px {
+        width: 30rem;
+        height: 12rem;
+      }
+      @include hasta768px {
+        width: 25rem;
+        height: 10rem;
+      }
+      @include hasta600px {
+        width: 18rem;
+        height: 8rem;
+      }
+      @include hasta320px {
+        width: 15rem;
+        height: 6rem;
+      }
     }
     
     &__contenedorbtn {
       margin: 30px 0px;
+      @include hasta768px {
+        display: flex;
+        flex-direction: column;
+      }
     }
   }
    
@@ -84,11 +164,17 @@
     cursor: pointer;
     outline: none;
     margin: 0px 1rem;
+    @include hasta1024px {
+      font-size: 10px;
+    }
+    @include hasta768px {
+      margin-bottom: 10px;
+    }
 
     &:hover {
       background-color: $color-principaluno;
       box-shadow: 0px 15px 20px rgba(255, 255, 255, 0.4);
-      color: $color-principaluno;
+      color: $color-principaldos;
       transform: translateY(-7px);
     }
      

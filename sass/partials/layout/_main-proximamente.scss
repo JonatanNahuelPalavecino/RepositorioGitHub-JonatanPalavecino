@@ -2,35 +2,65 @@
 @import "../responsive/media-queries";
 
 .proximamente {
-    margin: 4rem 0px 4rem;
+  margin: 4rem 0px 4rem;
 
-    &__contenedorUno {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    
+  &__contenedorUno {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  
+  &__descripcion {
+    margin-top: 2rem;
+    width: 500px;
+    @include hasta600px {
+      width: 350px;
     }
-    
-    &__descripcion {
-      margin-top: 2rem;
-      width: 500px;
-    }
-    
-    &__contenedorDos {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      margin: 4rem 2rem;
-    }
-    
-    &__contenedorImg {
-      border: map-get($bordes, borde);
-      border-radius: map-get($bordes, curvaDelBorde);
-      @include sombreado-de-caja;
-      object-fit: cover;
+    @include hasta600px {
       width: 300px;
-      height: 300px;
     }
   }
   
+  &__contenedorDos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 4rem 2rem;
+    @include hasta1200px {
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
+  }
+  
+  &__contenedorImg {
+    border: map-get($bordes, borde);
+    border-radius: map-get($bordes, curvaDelBorde);
+    @include sombreado-de-caja;
+    object-fit: cover;
+    width: map-get($recuadro, anchoDeImagen);
+    height: map-get($recuadro, altoDeImagen);
+    @include hasta1200px {
+      width: map-get($recuadro, anchoDeImagen)+100px;
+      height: map-get($recuadro, altoDeImagen)+100px;
+      margin-bottom: 50px;
+    }
+    @include hasta1024px {
+      width: map-get($recuadro, anchoDeImagen)+300px;
+      height: map-get($recuadro, altoDeImagen)+150px;
+      margin-bottom: 50px;
+    }
+    @include hasta768px {
+      width: map-get($recuadro, anchoDeImagen)+100px;
+      height: map-get($recuadro, altoDeImagen);
+      margin-bottom: 50px;
+    }
+    @include hasta320px {
+      width: map-get($recuadro, anchoDeImagen)-100px;
+      height: map-get($recuadro, altoDeImagen)-100px;
+      margin-bottom: 50px;
+    }
+  }
+}
+
