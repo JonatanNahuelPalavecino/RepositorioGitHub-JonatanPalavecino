@@ -2,44 +2,44 @@
 @import "../responsive/media-queries";
 
 .encabezado {
-  @include hasta1200px {
+  @include hasta1300px {
     display: flex;
     flex-direction: column;
   }
 
   &__logo {
-      width: 200px;
-      margin-top: 1rem;
-      transition: all 1s;
-      @include hasta1024px {
-        width: 180px;
-      }
-      @include hasta320px {
-        width: 130px;
-      }
-  
-      &:hover {
-          transform: scale(1.1);
-      }
+    width: 200px;
+    margin-top: 1rem;
+    transition: all 1s;
+    @include hasta1115px {
+      width: 180px;
+    }
+    @include hasta425px {
+      width: 130px;
+    }
+
+    &:hover {
+        transform: scale(1.1);
+    }
   }
   
   &__lema {
-      font-family: $fuente-estonia;
-      font-size: 2.5rem;
-      color: $color-principaluno;
-      @include hasta1024px {
-        font-size: 3rem;
-        text-align: center;
-      }
-      @include hasta768px {
-        margin-bottom: 1rem;
-      }
-      @include hasta480px {
-        font-size: 2.4rem;
-      }
-      @include hasta320px {
-        font-size: 2rem;
-      }
+    font-family: $fuente-estonia;
+    font-size: 2.5rem;
+    color: $color-principaluno;
+    @include hasta1115px {
+      font-size: 3rem;
+      text-align: center;
+    }
+    @include hasta768px {
+      margin-bottom: 1rem;
+    }
+    @include hasta550px {
+      font-size: 2.4rem;
+    }
+    @include hasta425px {
+      font-size: 2rem;
+    }
   }
     
   &__enlace{
@@ -53,14 +53,14 @@
     font-family: $fuente-monstserrat;
     font-weight: bold;
     color: $color-principaldos !important;
-    @include hasta1024px {
+    @include hasta1115px {
       font-size: 1.2rem;
       text-align: center;
     }
-    @include hasta480px {
+    @include hasta550px {
       font-size: 1.1rem;
     }
-    @include hasta320px {
+    @include hasta425px {
       font-size: 1rem;
     }
   

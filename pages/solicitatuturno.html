@@ -24,7 +24,7 @@
             <div class="encabezado container-fluid">
                 <div class="d-flex flex-column align-items-center">
                     <a class="navbar-brand" href="../index.html"><img class="encabezado__logo" src="../images/logo1.png" alt="logo"></a>
-                    <h3 class="encabezado__lema"> Manicura y técnica profesional en uñas esculpidas</h3>
+                    <strong class="encabezado__lema"> Manicura y técnica profesional en uñas esculpidas</strong>
                 </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -58,7 +58,7 @@
 
         <section class="form">
             <div class="form__titulo">
-                <h3 class="contenedor__titulo" data-aos="fade-down" data-aos-delay="50" data-aos-once="true">Solicita Tu Turno</h3>
+                <em class="contenedor__titulo" data-aos="fade-down" data-aos-delay="50" data-aos-once="true">Solicita Tu Turno</em>
             </div>
             <div class="form__contenedor" data-aos="fade-down" data-aos-delay="100" data-aos-once="true">
                 <form action="#" method="get" enctype="text/plain">
@@ -66,47 +66,47 @@
                         <label class="form__contenedorTitulo" for="diadelturno">Dia del turno:</label>
                         <div class="form-check form__contenedorOpcion">
                             <div class="form__contenedorDato">
-                                <input class="form__contenedorRadio form-check-input form__contenedorRadio--ml" type="radio" name="diadelturno" value="lunes">Lunes
+                                <input class="form__contenedorRadio form-check-input form__contenedorRadio--ml" type="radio" name="diadelturno" value="lunes" required>Lunes
                             </div>
                             <div class="form__contenedorDato">
-                                <input class="form__contenedorRadio form-check-input" type="radio" name="diadelturno" value="martes">Martes
+                                <input class="form__contenedorRadio form-check-input" type="radio" name="diadelturno" value="martes" required>Martes
                             </div>
                             <div class="form__contenedorDato">
-                                <input class="form__contenedorRadio form-check-input" type="radio" name="diadelturno" value="miercoles">Miercoles
+                                <input class="form__contenedorRadio form-check-input" type="radio" name="diadelturno" value="miercoles" required>Miercoles
                             </div>
                             <div class="form__contenedorDato">
-                                <input class="form__contenedorRadio form-check-input" type="radio" name="diadelturno" value="jueves">Jueves
+                                <input class="form__contenedorRadio form-check-input" type="radio" name="diadelturno" value="jueves" required>Jueves
                             </div>
                             <div class="form__contenedorDato">
-                                <input class="form__contenedorRadio form-check-input" type="radio" name="diadelturno" value="viernes">Viernes
+                                <input class="form__contenedorRadio form-check-input" type="radio" name="diadelturno" value="viernes" required>Viernes
                             </div>
                             <div class="form__contenedorDato">
-                                <input class="form__contenedorRadio form-check-input" type="radio" name="diadelturno" value="sabado">Sabado
+                                <input class="form__contenedorRadio form-check-input" type="radio" name="diadelturno" value="sabado" required>Sabado
                             </div>
                         </div>
                         <label class="form__contenedorTitulo" for="horariodelturno">Franja horaria:</label>
                         <div class="form-check form__contenedorOpcion">
                             <div class="form__contenedorDato">
-                                <input class="form__contenedorRadio form-check-input form__contenedorRadio--ml" type="radio" name="horariodelturno" value="nueveADoce">De 9 a 12hs
+                                <input class="form__contenedorRadio form-check-input form__contenedorRadio--ml" type="radio" name="horariodelturno" value="nueveADoce" required>De 9 a 12hs
                             </div>
                             <div class="form__contenedorDato">
-                                <input class="form__contenedorRadio form-check-input" type="radio" name="horariodelturno" value="doceAQuince">De 12 a 15hs
+                                <input class="form__contenedorRadio form-check-input" type="radio" name="horariodelturno" value="doceAQuince" required>De 12 a 15hs
                             </div>
                             <div class="form__contenedorDato">
-                                <input class="form__contenedorRadio form-check-input" type="radio" name="horariodelturno" value="quinceADieciocho">De 15 a 18hs
+                                <input class="form__contenedorRadio form-check-input" type="radio" name="horariodelturno" value="quinceADieciocho" required>De 15 a 18hs
                             </div>
                         </div>
                         <label class="form__contenedorTitulo" for="info-personal">Nombre:</label>
                         <div class="form__contenedorText">
-                            <input class="form__contenedorComp form-control" type="text" name="user-info" id="info-personal" placeholder="Escriba su nombre">
+                            <input class="form__contenedorComp form-control" type="text" name="user-info" id="info-personal" placeholder="Escriba su nombre" required>
                         </div>
                         <label class="form__contenedorTitulo" for="info-personal">Apellido:</label>
                         <div class="form__contenedorText">
-                            <input class="form__contenedorComp form-control" type="text" name="user-info" id="info-personal" placeholder="Escriba su apellido">
+                            <input class="form__contenedorComp form-control" type="text" name="user-info" id="info-personal" placeholder="Escriba su apellido" required>
                         </div>
                         <label class="form__contenedorTitulo" for="info-personal">Telefono de contacto:</label>
                         <div class="form__contenedorText">
-                            <input class="form__contenedorComp form-control" type="text" name="user-info" id="info-personal">
+                            <input class="form__contenedorComp form-control" type="number" name="user-info" id="info-personal" required>
                         </div>
                         <label class="form__contenedorTitulo" for="trabajoarealizar">¿Que tenes ganas de hacerte en las uñas?</label>
                         <div class="form__contenedorText">
@@ -133,9 +133,8 @@
                             <textarea class="form__textarea" name="explicaciondeltrabajo" id="campodetexto"></textarea>
                         </div>
                         <div class="form__contenedorbtn">
-                            <input class="btn" type="reset" value="REINICIAR FORMULARIO">
+                            <input class="btn" type="reset" value="REINICIAR">
                             <input class="btn" type="submit" value="ENVIAR">
-                            <input class="btn" type="button" value="NO HACE NADA">
                         </div>
                     </fieldset>
                 </form>
@@ -148,9 +147,9 @@
 
         <footer class="footer">
             <div class="footer__contenedor">
-                <h4 class="footer__titulo">
+                <em class="footer__titulo">
                     Aceptamos todos los metodos de pago!
-                </h4>
+                </em>
                 <ul class="footer__item">
                     <li>Efectivo</li>
                     <li>Mercado Pago</li>

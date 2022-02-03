@@ -24,7 +24,7 @@
             <div class="encabezado container-fluid">
                 <div class="d-flex flex-column align-items-center">
                     <a class="navbar-brand" href="../index.html"><img class="encabezado__logo" src="../images/logo1.png" alt="logo"></a>
-                    <h3 class="encabezado__lema"> Manicura y técnica profesional en uñas esculpidas</h3>
+                    <strong class="encabezado__lema"> Manicura y técnica profesional en uñas esculpidas</strong>
                 </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -58,14 +58,62 @@
 
         <section class="proximamente">
             <div class="proximamente__contenedorUno">
-                <h2 class="contenedor__titulo" data-aos="fade-down" data-aos-delay="50" data-aos-once="true">Proximamente!</h2>
+                <em class="contenedor__titulo" data-aos="fade-down" data-aos-delay="50" data-aos-once="true">Proximamente!</em>
                 <p class="contenedor__descripcion proximamente__descripcion" data-aos="fade-down" data-aos-delay="100" data-aos-once="true">En breve estaremos incorporando tratamientos Spa para nuestras Manos. Se trata de masajes aromáticos con sales o máscaras hidratantes de mano, con una toalla caliente sobre ellas para ayudar a  una mejor penetración. Ademas, la aplicacion de una máscara hidratante de mano. Este tipo de servicios, se complementaria con lo que ya les ofrecemos para un mejor resultado.</p>
             </div>
             <div class="proximamente__contenedorDos">
-                <img class="proximamente__contenedorImg" data-aos="fade-down" data-aos-delay="150" data-aos-once="true" src="../images/ejemplo1.png" alt="ejemplo1">
-                <img class="proximamente__contenedorImg" data-aos="fade-down" data-aos-delay="200" data-aos-once="true" src="../images/ejemplo2.png" alt="ejemplo2">
-                <img class="proximamente__contenedorImg" data-aos="fade-down" data-aos-delay="250" data-aos-once="true" src="../images/ejemplo3.jpg" alt="ejemplo3">
-                <img class="proximamente__contenedorImg" data-aos="fade-down" data-aos-delay="300" data-aos-once="true" src="../images/ejemplo4.jpg" alt="ejemplo4">
+                <img class="proximamente__contenedorImg" data-aos="fade-down" data-aos-delay="150" data-aos-once="true" data-bs-toggle="modal" data-bs-target="#exampleModalUno" src="../images/ejemplo1.png" alt="imgproximamente1">
+                <div class="modal fade" id="exampleModalUno" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img class="contenedor__imagenAmp" src="../images/ejemplo1.png" alt="imgproximamente1">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img class="proximamente__contenedorImg" data-aos="fade-down" data-aos-delay="200" data-aos-once="true" data-bs-toggle="modal" data-bs-target="#exampleModalDos" src="../images/ejemplo2.png" alt="imgproximamente2">
+                <div class="modal fade" id="exampleModalDos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img class="contenedor__imagenAmp" src="../images/ejemplo2.png" alt="imgproximamente2">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img class="proximamente__contenedorImg" data-aos="fade-down" data-aos-delay="250" data-aos-once="true" data-bs-toggle="modal" data-bs-target="#exampleModalTres" src="../images/ejemplo3.jpg" alt="imgproximamente3">
+                <div class="modal fade" id="exampleModalTres" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img class="contenedor__imagenAmp" src="../images/ejemplo3.jpg" alt="imgproximamente3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img class="proximamente__contenedorImg" data-aos="fade-down" data-aos-delay="300" data-aos-once="true" data-bs-toggle="modal" data-bs-target="#exampleModalCuatro" src="../images/ejemplo4.jpg" alt="imgproximamente4">
+                <div class="modal fade" id="exampleModalCuatro" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img class="contenedor__imagenAmp" src="../images/ejemplo4.jpg" alt="imgproximamente4">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>    
 
@@ -75,9 +123,9 @@
 
         <footer class="footer">
             <div class="footer__contenedor">
-                <h4 class="footer__titulo">
+                <em class="footer__titulo">
                     Aceptamos todos los metodos de pago!
-                </h4>
+                </em>
                 <ul class="footer__item">
                     <li>Efectivo</li>
                     <li>Mercado Pago</li>

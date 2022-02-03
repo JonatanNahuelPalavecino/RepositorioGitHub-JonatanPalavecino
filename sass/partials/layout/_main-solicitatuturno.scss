@@ -14,23 +14,23 @@
     &__contenedor {
       width: 840px;
       text-align: center;
-      @include hasta1024px {
+      @include hasta1115px {
         width: 700px;
       }
       @include hasta768px {
         width: 550px;
       }
-      @include hasta600px {
-        width: 320px;
+      @include hasta650px {
+        width: 425px;
       }
-      @include hasta320px {
+      @include hasta425px {
         width: 280px;
       }
 
       &Recuadro {
         @extend %alineacionstt;
         border: map-get($bordes, borde);
-        border-radius: map-get($bordes, curvaDelBorde);
+        border-radius: map-get($bordes, curvaDelBorde)-4%;
         @include sombreado-de-caja;
         margin-top: 4rem;
       }
@@ -40,13 +40,13 @@
         font-size: 1.8rem;
         color: $color-principaluno;
         padding: 30px 0px;
-        @include hasta1024px {
+        @include hasta1115px {
           font-size: 1.6rem;
         }
         @include hasta768px {
           font-size: 1.4rem;
         }
-        @include hasta320px {
+        @include hasta425px {
           font-size: 1.2rem;
         }
       }
@@ -62,14 +62,14 @@
         font-size: 1.3rem;
         color: $color-principaldos;
         padding-left: 0;
-        @include hasta1024px {
+        @include hasta1115px {
           font-size: 1.1rem;
         }
         @include hasta768px {
           flex-wrap: wrap;
           justify-content: center;
         }
-        @include hasta600px {
+        @include hasta650px {
           flex-direction: column;
         }
       }
@@ -89,7 +89,7 @@
           @include hasta768px{
             margin-left: 0 !important; 
           }
-          @include hasta600px{
+          @include hasta650px{
             margin-left: 1.5em !important; 
           }
         }
@@ -112,7 +112,7 @@
           box-shadow: 0 0 0 0.25rem $color-principaluno;
         }
 
-        @include hasta600px {
+        @include hasta650px {
           display: initial;
           width: 85%;
         }
@@ -122,7 +122,7 @@
     &__textarea {
       width: 35rem;
       height: 15rem;
-      @include hasta1024px {
+      @include hasta1115px {
         width: 30rem;
         height: 12rem;
       }
@@ -130,11 +130,11 @@
         width: 25rem;
         height: 10rem;
       }
-      @include hasta600px {
+      @include hasta650px {
         width: 18rem;
         height: 8rem;
       }
-      @include hasta320px {
+      @include hasta425px {
         width: 15rem;
         height: 6rem;
       }
@@ -164,7 +164,7 @@
     cursor: pointer;
     outline: none;
     margin: 0px 1rem;
-    @include hasta1024px {
+    @include hasta1115px {
       font-size: 10px;
     }
     @include hasta768px {
@@ -181,5 +181,10 @@
     &:active {
       transform: translateY(-1px);
     }
-   }
+
+    &:focus {
+      outline: 0;
+      box-shadow: 0 0 0 0.25rem #f4a9a9;
+    }
+  }
    

@@ -4,7 +4,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 30px 15px;
+    padding: 1rem 2rem 1rem;
     @include hasta768px {
         display: flex;
         flex-direction: column;
@@ -12,6 +12,7 @@
 
     &__contenedor {
         align-self: end;
+        text-align: center;
         @include hasta768px {
             align-self: center;
         }
@@ -23,8 +24,11 @@
         text-align: center;
         line-height: 2rem;
         color: $color-principaldos;
-        @include hasta1024px {
+        @include hasta1115px {
             font-size: 1.6rem;
+        }
+        @include hasta650px {
+            line-height: 1.5rem;
         }
     }
     
@@ -36,10 +40,10 @@
         line-height: 2rem;
         color: $color-principaldos;
         padding-left: 0;
-        @include hasta1024px {
+        @include hasta1115px {
             font-size: 1.1rem;
         }
-        @include hasta480px {
+        @include hasta550px {
             font-size: 1rem;
         }
     }
@@ -63,12 +67,12 @@
     
     &__firma {
         font-family: $fuente-lato;
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         color: $color-principaldos;
-        @include hasta1024px {
-            font-size: 1.3rem;
+        @include hasta1115px {
+            font-size: 1.2rem;
         }
-        @include hasta480px {
+        @include hasta550px {
             font-size: 1rem;
             text-align: center;
         }

@@ -6,6 +6,9 @@
     flex-direction: column;
     align-items: center;
     margin-top: 4rem;
+    @include hasta650px {
+      margin-top: 2rem;
+    }
 
     &Local {
       display: grid;
@@ -16,8 +19,8 @@
       justify-content: center;
       gap: 4rem;
       margin-bottom: 4rem;
-      @include hasta1024px {
-        grid-template-rows: 43% 42%;
+      @include hasta1115px {
+        grid-template-rows: 43% 40%;
         grid-template-columns: 50% 25%;
       }
       @include hasta768px {
@@ -27,22 +30,25 @@
         align-items: center;
         width: 70%;
       }
+      @include hasta650px {
+        margin-bottom: 2rem;
+      }
     }
     
     &ImgAncha {
       grid-area: foto1;
       overflow: hidden;
       border: map-get($bordes, borde);
-      border-radius: 1%;
+      border-radius: map-get($bordes, curvaDelBorde)-4%;
       @include sombreado-de-caja;
       object-fit: cover;
       @include hasta768px {
           width: 550px;
       }
-      @include hasta600px {
+      @include hasta650px {
         width: 400px;
       }
-      @include hasta320px {
+      @include hasta425px {
         width: 300px;
       }
     }
@@ -51,7 +57,7 @@
       grid-area: foto2;
       overflow: hidden;
       border: map-get($bordes, borde);
-      border-radius: 1%;
+      border-radius: map-get($bordes, curvaDelBorde)-4%;
       @include sombreado-de-caja;
       object-fit: cover;
       @include hasta768px {
@@ -67,10 +73,10 @@
   .contenedor__descripcion--corto {
     width: 500px;
     margin-top: 2rem;
-    @include hasta600px {
+    @include hasta650px {
         width: 400px;
     }
-    @include hasta320px {
+    @include hasta425px {
         width: 300px;
     }
   }

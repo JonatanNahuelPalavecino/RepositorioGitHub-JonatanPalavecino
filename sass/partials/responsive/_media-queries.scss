@@ -1,11 +1,11 @@
-@mixin hasta1200px {
-    @media screen and (max-width: 1200px) {
+@mixin hasta1300px {
+    @media screen and (max-width: 1300px) {
         @content;
     }
 }
 
-@mixin hasta1024px {
-    @media screen and (max-width: 1024px) {
+@mixin hasta1115px {
+    @media screen and (max-width: 1115px) {
         @content;
     }
 }
@@ -16,20 +16,26 @@
     }
 }
 
-@mixin hasta600px {
-    @media screen and (max-width: 600px) {
+@mixin hasta650px {
+    @media screen and (max-width: 650px) {
         @content;
     }
 }
 
-@mixin hasta480px {
-    @media screen and (max-width: 480px) {
+@mixin hasta550px {
+    @media screen and (max-width: 550px) {
         @content;
     }
 }
 
-@mixin hasta320px {
-    @media screen and (max-width: 320px) {
+@mixin hasta425px {
+    @media screen and (max-width: 425px) {
+        @content;
+    }
+}
+
+@mixin hasta380px {
+    @media screen and (max-width: 380px) {
         @content;
     }
 }
